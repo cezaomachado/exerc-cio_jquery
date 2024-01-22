@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #app {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #task-form {
+    margin-bottom: 20px;
+  }
+  
+  #task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .task-item.completed {
+    background-color: #12c502; /* Amarelo */
+    color: #fff;
+  }
+  
+  .task-buttons {
+    display: none;
+    margin-left: 10px;
+  }
+  
+  .task-item:hover {
+    background-color: #f8f9fa; /* Tom mais claro de cinza */
+  }
+  
+  .task-item:hover .task-buttons {
+    display: inline-block;
+  }
+  
+  .save-button,
+  .cancel-button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .save-button {
+    background-color: #2ecc71; /* Verde */
+    color: #fff;
+  }
+  
+  .save-button:hover {
+    background-color: #27ae60; /* Tom mais escuro de verde */
+  }
+  
+  .cancel-button {
+    background-color: #e74c3c; /* Vermelho */
+    color: #fff;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c0392b; /* Tom mais escuro de vermelho */
+  }
+  
